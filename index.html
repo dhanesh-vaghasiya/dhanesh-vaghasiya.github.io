@@ -18,13 +18,22 @@
             width: 100vw;
             height: 100vh;
             display: flex;
+            max-height: 100vh;
             justify-content: center;
             align-items: center;
+        }
+        .birthday_card{
+            width: 100vw;
+            height: 50vh;
+            transform: rotate(90);
+        }
+        .card_btn{
+            display: none;
         }
     </style>
 </head>
 <body>
-    <button >Click here to say thanks!!</button>
-    <img src="./H_.jpg" alt="..."/>
+    <button class="card_btn">Click here to say thanks!!</button>
+    <img src="./H_.jpg" class="birthday_card" alt="..."/>
 </body>
 </html>
