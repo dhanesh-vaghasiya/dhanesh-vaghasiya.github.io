@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,10 @@
         .birthday_card{
             width: 100vw;
             height: 40vh;
+            border-top: 1px solid rgb(0, 213, 255);
+            border-bottom: 1px solid rgb(255, 0, 191);
             display: none;
+            transition: opacity 2.5s ease;
         }
         .card_btn{
             /* display: block; */
@@ -40,10 +43,27 @@
         let btn=document.querySelector(".card_btn")
         let img = document.querySelector(".birthday_card")
         function showCard(){
-            console.log("Dfdlfldkfjdk")
-            img.style.display = "block"
+            img.style.display = 'block'; // Change display property
+            img.style.opacity = '0'; // Set initial opacity to 0
             btn.style.display = "none"
+
+            setTimeout(() => {
+                img.style.opacity = '1'; // Change opacity after a delay for transition
+            }, 50);
         }
     </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello world
 </body>
 </html>
