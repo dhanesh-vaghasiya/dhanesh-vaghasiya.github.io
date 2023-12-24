@@ -25,15 +25,25 @@
         .birthday_card{
             width: 100vw;
             height: 40vh;
-            transform: rotate(90);
+            display: none;
         }
         .card_btn{
-            display: none;
+            /* display: block; */
         }
     </style>
 </head>
 <body>
-    <button class="card_btn">Click here to say thanks!!</button>
+    <button class="card_btn" onclick="showCard()">Click here to say thanks!!</button>
     <img src="./H_.jpg" class="birthday_card" alt="..."/>
+
+    <script>
+        let btn=document.querySelector(".card_btn")
+        let img = document.querySelector(".birthday_card")
+        function showCard(){
+            console.log("Dfdlfldkfjdk")
+            img.style.display = "block"
+            btn.style.display = "none"
+        }
+    </script>
 </body>
 </html>
